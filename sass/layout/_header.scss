@@ -1,0 +1,90 @@
+.header {
+    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+    grid-column: full-start / full-end;
+
+    &__topbar {
+        height: 8rem; 
+        padding: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    } 
+}
+
+//LOGO
+.logo-box {
+
+}
+
+.logo {
+    height: 4rem;
+}
+
+//NAVIGATION
+.navigation {
+
+    &__list {
+        list-style: none; 
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 2rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: color .4s;
+        } 
+
+        &:hover {
+            color: $primary-dark-red;
+        }
+    }
+}
+
+// USER NAVIGATION
+.user-nav {
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 1.5rem;
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+    }
+
+    &__notify {
+        display: inline-block;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%; 
+        background-color: $primary-dark-red;
+        font-size: 1rem;
+        text-align: center;
+        align-self: flex-start;
+        margin-left: .5rem;
+    }
+}
+
+
+// ICON
+.icon-md {
+    font-size: 1.6rem;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "fooddelivery",
+  "version": "1.0.0",
+  "description": "online food delivery",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonamTamang90/FoodDelivery.git"
+  },
+  "author": "Sonam Tamang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SonamTamang90/FoodDelivery/issues"
+  },
+  "homepage": "https://github.com/SonamTamang90/FoodDelivery#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
