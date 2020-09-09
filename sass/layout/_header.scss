@@ -2,6 +2,7 @@
     background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 
     grid-column: full-start / full-end;
 
@@ -12,6 +13,13 @@
         justify-content: space-evenly;
         align-items: center;
     } 
+
+    &__form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }  
 }
 
 //LOGO
@@ -83,8 +91,57 @@
     }
 }
 
+// FORMS 
+.form {
+    display: flex;
+
+    &__group {
+        
+    }
+
+    &__category {
+        padding: 2rem 4rem;   
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        border: none;
+        border-right: .8px solid #888;   
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        }
+    }   
+
+    &__keyword { 
+        padding: 2rem 10rem;   
+        border: none;
+        &:focus {
+            outline: none;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        }
+    }
+    
+    &__btn {
+        padding: 1.7rem 3.2rem;       
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;   
+        background-color: $primary-dark-red;   
+        border: none;   
+        color: #fff; 
+        font-size: 1.8rem;  
+        cursor: pointer; 
+    }
+}
 
 // ICON
 .icon-md {
     font-size: 1.6rem;
 }
+
+.icon-search {
+    font-size: 1.6rem;
+    color: #fff;    
+}
+
+
+
