@@ -111,13 +111,6 @@ body {
   .navigation__link:hover {
     color: #B23121; }
 
-.sticky .navigation {
-  margin-right: 22rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff; }
-
 .user-nav__list {
   list-style: none;
   display: flex; }
