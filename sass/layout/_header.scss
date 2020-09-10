@@ -8,11 +8,11 @@
 
     &__topbar {
         height: 8rem; 
-        padding: 3rem;
+        padding: 6rem;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-    } 
+    }  
 
     &__form {
         position: absolute;
@@ -24,26 +24,27 @@
 
 //LOGO
 .logo-box {
-
+   margin-right: 26rem;
 }
 
 .logo {
     height: 4rem;
 }
 
-//NAVIGATION
+//NAVIGATION 
 .navigation {
+    margin-right: 22rem;
 
     &__list {
         list-style: none; 
-        display: flex;
+        display: flex; 
     }
 
     &__item {
         margin-right: 2rem;
 
-        // &:first-child {
-        //     margin-left: 9rem;        
+        // &:first-child {  
+        //     margin-left: 10rem;        
         // }    
     }
 
@@ -64,8 +65,18 @@
     }
 }
 
+// STICKY NAVIGATION 
+.sticky .navigation {   
+    margin-right: 22rem;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    background-color: #fff;
+}
+
 // USER NAVIGATION
 .user-nav {
+    
     &__list {
         list-style: none;
         display: flex;
