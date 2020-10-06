@@ -8,3 +8,10 @@ $(document).ready(function() {
         }
     });
 });    
+
+
+window.addEventListener('scroll', function() {
+    var topbar = document.querySelector('.topbar');
+
+    topbar.classList.toggle('sticky', window.scrollY(0));
+})

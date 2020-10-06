@@ -3,139 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynasty + | Online Food Delivery</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Dynasty | online Food delivery </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <!-- TOP BAR STARTS -->
-            <div class="header__topbar">
-                <div class="logo-box">
-                    <img src="img/white-logo.png" alt="Dynasty Logo" class="logo">
-                    <img src="img/black-logo.png" alt="Dynasty Logo" class="logo">
-                </div>
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Our Menu</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Specials Order</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">How it works?</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
-                    </ul>
-                </nav>
-                <!-- MAIN NAVIGATION ENDS -->
-
-                <!-- USER NAVIGATION STARTS -->
-                <div class="user-nav">
-                    <ul class="user-nav__list">
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">
-                                <i class="fas fa-shopping-cart icon-md"></i>
-                                <span class="user-nav__notify">3</span>
-                            </a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">
-                                <i class="fas fa-bookmark icon-md"></i>
-                                <span class="user-nav__notify">2</span>
-                            </a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">
-                                <i class="fas fa-user-circle icon-search"></i>
-                                Admin
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- USER NAVIGATION ENDS -->
+            <div class="header__logo-box">
+                <img src="img/white-logo.png" alt="Dynasty Logo" class="header__logo">
             </div>
-            <!-- TOP BAR ENDS -->
-
-            <!-- SEARCH FORM STARTS -->
-            <div class="header__form">
-                <h1 class="primary-heading mb-md">Search from more than 2,000 meals</h1>
-                <form action="#" class="form">
-                    <div class="form__group">
-                        <input type="text" class="form__category" placeholder="Category">
-                    </div>
-                    <div class="form__group">
-                        <input type="text" class="form__keyword" placeholder="Enter your keywords">
-                    </div>
-                    <div class="form__group">
-                        <button class="form__btn">
-                            <i class="fas fa-search icon-md"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <!-- SEARCH FORM ENDS -->
+            <nav class="primary-nav">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item">Home</li>
+                    <li class="primary-nav__item">About us</li>
+                    <li class="primary-nav__item">Our Menu</li>
+                    <li class="primary-nav__item">Specials</li>
+                    <li class="primary-nav__item">Blogs</li>
+                    <li class="primary-nav__item">Contact us</li>
+                </ul>
+            </nav>
+            <nav class="customer-nav">
+                <ul class="customer-nav__list">
+                    <li class="customer-nav__item">
+                        <i class="fas fa-shopping-cart"></i>
+                    </li>
+                    <li class="customer-nav__item">
+                        <i class="fas fa-bell"></i>
+                    </li>
+                    <li class="customer-nav__item">
+                        <i class="fas fa-user-circle"></i>
+                    </li>
+                    <li class="customer-nav__item">
+                        <i class="fas fa-bookmark"></i>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section class="features">
-            
-            <div class="feature">
-                <i class="fas fa-shipping-fast icon-feature"></i>
-                <h3 class="tertiary-heading">Fast Delivery</h3>
-                <p class="feature__txt">
-                    ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem dolor, vel deleniti libero nam laborum quos quis minus ipsam.
-                </p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-lock icon-feature"></i>
-                <h3 class="tertiary-heading">Safe and Secure</h3>
-                <p class="feature__txt">
-                    ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem dolor, vel deleniti libero nam laborum quos quis minus ipsam.
-                </p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-heart icon-feature"></i>
-                <h3 class="tertiary-heading">Healthy</h3>
-                <p class="feature__txt">
-                    ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem dolor, vel deleniti libero nam laborum quos quis minus ipsam.
-                </p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-clock icon-feature"></i>
-                <h3 class="tertiary-heading">24/7 Open</h3>
-                <p class="feature__txt">
-                    ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem dolor, vel deleniti libero nam laborum quos quis minus ipsam.
-                </p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-map-marked icon-feature"></i>
-                <h3 class="tertiary-heading">Any Location</h3>              
-                <p class="feature__txt">
-                    ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem dolor, vel deleniti libero nam laborum quos quis minus ipsam.
-                </p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-shopping-cart icon-feature"></i>
-                <h3 class="tertiary-heading">Free Delivery</h3>
-                <p class="feature__txt">
-                    ipsum dolor sit, amet consectetur adipisicing elit. Alias dolorem dolor.
-                </p>
+        <section class="banner">
+            <div class="banner__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Dynasty Premium Food</span>
+                    <span class="heading-primary--sub">Choose from more than 2000 premium foods</span>
+                </h1>
+                <a href="#" class="btn btn--primary">Discover Menu</a>
             </div>
         </section>
-        <section class="meals">
-            Meals
-        </section>
-        <div class="story__pictures">
-            STORY PICTURES
-        </div>
-        <div class="story__content">
-            STORY CONTENT
-        </div>
-        <section class="how-it-works">
-            HOW IT WORKS
-        </section>
-        <footer class="footer">
-            FOOTER
-        </footer>
     </div>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/app.js"></script>
 </body>
 </html>

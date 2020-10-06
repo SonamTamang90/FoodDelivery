@@ -22,152 +22,68 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #545454;
-  line-height: 1.5; }
+  line-height: 1.5;
+  padding: 3rem; }
 
-.primary-heading {
-  font-size: 3.7rem;
+.heading-primary {
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 3rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.8rem;
+    letter-spacing: 1.5px; }
 
 .tertiary-heading {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase; }
 
-.features {
-  padding: 6rem 0;
-  grid-column: center-start / center-end;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 3rem; }
-
-.feature {
-  display: grid;
-  padding: 3rem;
-  grid-template-rows: repeat(2, min-content);
-  grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2rem; }
-  .feature__txt {
-    font-size: 1.4rem;
-    grid-column: 1 / -1; }
-
-.icon-feature {
+.btn:link, .btn:visited {
   display: inline-block;
-  font-size: 3.4rem;
-  color: #D44638; }
+  text-decoration: none; }
+
+.btn--primary {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff0022;
+  padding: 1.3rem 3rem; }
+
+.banner {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/hero-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 5; }
+  .banner__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .footer {
   background-color: #111320;
   grid-column: full-start / full-end; }
 
-.container {
-  display: grid;
-  grid-template-rows: 80vh repeat(2, min-content) 40vw repeat(2, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  grid-column: full-start / full-end; }
-  .header__topbar {
-    height: 8rem;
-    padding: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .header__form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-
-.logo-box {
-  margin-right: 26rem; }
-
-.logo {
-  height: 4rem; }
-
-.navigation {
-  margin-right: 22rem; }
-  .navigation__list {
-    list-style: none;
-    display: flex; }
-  .navigation__item {
-    margin-right: 2rem; }
-  .navigation__link:link, .navigation__link:visited {
-    display: inline-block;
-    font-size: 1.5rem;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: color .4s; }
-  .navigation__link:hover {
-    color: #B23121; }
-
-.user-nav__list {
-  list-style: none;
-  display: flex; }
-
-.user-nav__item {
-  margin-right: 1.5rem; }
-
-.user-nav__link {
-  font-size: 1.4rem;
-  color: #fff;
-  text-decoration: none;
-  display: flex; }
-
-.user-nav__notify {
-  display: inline-block;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
-  background-color: #B23121;
-  font-size: 1rem;
-  text-align: center;
-  align-self: flex-start;
-  margin-left: .5rem; }
-
-.form {
-  display: flex; }
-  .form__category {
-    padding: 2rem 4rem;
-    border-top-left-radius: .5rem;
-    border-bottom-left-radius: .5rem;
-    border: none;
-    border-right: .8px solid #888; }
-    .form__category:focus {
-      outline: none;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-  .form__keyword {
-    padding: 2rem 10rem;
-    border: none; }
-    .form__keyword:focus {
-      outline: none;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-  .form__btn {
-    padding: 1.7rem 3.2rem;
-    border-top-right-radius: .5rem;
-    border-bottom-right-radius: .5rem;
-    background-color: #B23121;
-    border: none;
-    color: #fff;
-    font-size: 1.8rem;
-    cursor: pointer; }
-
-.icon-md {
-  font-size: 1.6rem; }
-
-.icon-search {
-  font-size: 1.6rem;
-  color: #fff; }
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between; }
+  .header__logo {
+    height: 6rem; }
 
 .how-it-works {
   background-color: orangered;

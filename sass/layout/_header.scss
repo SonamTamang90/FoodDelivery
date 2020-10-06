@@ -1,156 +1,18 @@
 .header {
-    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    position: absolute;   
+    top: 10%;
+    left: 10%;
+    z-index: 10;
 
-    grid-column: full-start / full-end;
-
-    &__topbar {
-        height: 8rem; 
-        padding: 6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }  
-
-    &__form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }  
-}
-
-//LOGO
-.logo-box {
-   margin-right: 26rem;
-}
-
-.logo {
-    height: 4rem;
-}
-
-//NAVIGATION 
-.navigation {
-    margin-right: 22rem;
-
-    &__list {
-        list-style: none; 
-        display: flex; 
-    }
-
-    &__item {
-        margin-right: 2rem;
-
-        // &:first-child {  
-        //     margin-left: 10rem;        
-        // }    
-    }
-
-    &__link {
-        &:link,
-        &:visited {
-            display: inline-block;
-            font-size: 1.5rem;
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: color .4s;
-        } 
-
-        &:hover {
-            color: $primary-dark-red;
-        }
-    }
-}
-
-// STICKY NAVIGATION 
-
-
-// USER NAVIGATION
-.user-nav {
-    
-    &__list {
-        list-style: none;
-        display: flex;
-    }
-
-    &__item {
-        margin-right: 1.5rem;
-    }
-
-    &__link {
-        font-size: 1.4rem;
-        color: #fff;
-        text-decoration: none;
-        display: flex;
-    }
-
-    &__notify {
-        display: inline-block;
-        height: 1.5rem;
-        width: 1.5rem;
-        border-radius: 50%; 
-        background-color: $primary-dark-red;
-        font-size: 1rem;
-        text-align: center;
-        align-self: flex-start;
-        margin-left: .5rem;
-    }
-}
-
-// FORMS 
-.form {
     display: flex;
+    justify-content: space-between;
 
-    &__group {
-        
+
+    &__logo-box {
+
     }
 
-    &__category {
-        padding: 2rem 4rem;   
-        border-top-left-radius: .5rem;
-        border-bottom-left-radius: .5rem;
-        border: none;
-        border-right: .8px solid #888;   
-        
-        &:focus {
-            outline: none;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-        }
-    }   
-
-    &__keyword { 
-        padding: 2rem 10rem;   
-        border: none;
-        &:focus {
-            outline: none;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-        }
-    }
-    
-    &__btn {
-        padding: 1.7rem 3.2rem;       
-        border-top-right-radius: .5rem;
-        border-bottom-right-radius: .5rem;   
-        background-color: $primary-dark-red;   
-        border: none;   
-        color: #fff; 
-        font-size: 1.8rem;  
-        cursor: pointer; 
+    &__logo {
+        height: 6rem;
     }
 }
-
-// ICON
-.icon-md {
-    font-size: 1.6rem;
-}
-
-.icon-search {
-    font-size: 1.6rem;
-    color: #fff;    
-}
-
-
-

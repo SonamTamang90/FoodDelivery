@@ -1,0 +1,16 @@
+.btn {
+
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &--primary {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $white-color;   
+        background-color: #ff0022;
+        padding: 1.3rem 3rem; 
+    }
+}
