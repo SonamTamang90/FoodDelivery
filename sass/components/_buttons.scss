@@ -12,5 +12,12 @@
         color: $white-color;   
         background-color: #ff0022;
         padding: 1.3rem 3rem; 
+        transition: border-radius .3s;
+
+
+        &:hover {
+            border-radius: 100px;
+            background-color: #df273f;
+        }
     }
 }

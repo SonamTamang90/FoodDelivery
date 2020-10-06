@@ -1,18 +1,78 @@
 .header {
-    position: absolute;   
-    top: 10%;
-    left: 10%;
-    z-index: 10;
-
+    background-color: rgba(0, 0, 0, .7);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: 100;
+    width: 100%; 
+    height: 8rem;
 
 
     &__logo-box {
 
     }
 
-    &__logo {
-        height: 6rem;
+    &__logo { 
+        height: 4rem;
+    }
+}
+
+//PRIMAY NAVIGATION
+.primary-nav {
+
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 1.5rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        display: inline-block;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white-color;
+        
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: #ff0022;
+    }
+
+}
+
+// CUSTOMER NAVIGATION
+.customer-nav {
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 1.5rem;
+    }
+
+    &__icon {
+        font-size: 1.4rem;
+        color: $white-color; 
+    }
+
+    &__link:link,
+    &__link:visited {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__link:hover,
+    &__link:active {   
+        color: #ff0022; 
     }
 }

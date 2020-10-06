@@ -1,0 +1,28 @@
+@media only screen  and (max-width: 1440px) {
+    .heading-primary {
+        font-weight: 400;  
+        text-transform: uppercase;
+        color: #fff; 
+        margin-bottom: 3rem;
+        
+        &--main {
+            display: block;
+            font-size: 5rem; 
+        }
+    
+        &--sub {
+            display: block;
+            font-size: 2.2rem;   
+            letter-spacing: 1.8px;
+        }
+    } 
+    
+    
+    .tertiary-heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    
+}
