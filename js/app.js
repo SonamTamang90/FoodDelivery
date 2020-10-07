@@ -1,17 +1,6 @@
-$(document).ready(function() {
-    $('.features').waypoint(function(direction) {
-        if(direction === 'down') {
-            $('nav').removeClass('.navigation');
-            $('nav').addClass('.sticky');
-        } else {
-            $('nav').removeClass('.sticky');
-        }
-    });
-});    
 
+var string = 'dkfakfa';
 
-window.addEventListener('scroll', function() {
-    var topbar = document.querySelector('.topbar');
+var stringArr = string.split();
 
-    topbar.classList.toggle('sticky', window.scrollY(0));
-})
+console.log(typeof stringArr);
