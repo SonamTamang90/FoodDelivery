@@ -37,4 +37,22 @@
             background-color: #df273f;
         }
     }
+
+    &--feature {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $white-color;   
+        background-color: #ff0022;
+        padding: 1.5rem 5rem;       
+        transition: border-radius .3s;
+        text-align: center;
+        align-self: center;
+        
+
+
+        &:hover {
+            border-radius: 100px;  
+            background-color: #df273f;
+        }
+    }
 }

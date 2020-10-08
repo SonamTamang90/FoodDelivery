@@ -36,7 +36,6 @@ body {
   color: #fff;
   margin-bottom: 3rem; }
   .heading-primary--main {
-    font-family: "Sansita Swashed", cursive;
     display: block;
     font-size: 6rem;
     letter-spacing: .5rem; }
@@ -100,6 +99,19 @@ body {
     border-radius: 100px;
     background-color: #df273f; }
 
+.btn--feature {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff0022;
+  padding: 1.5rem 5rem;
+  transition: border-radius .3s;
+  text-align: center;
+  align-self: center; }
+  .btn--feature:hover {
+    border-radius: 100px;
+    background-color: #df273f; }
+
 .section-about {
   padding: 6rem 0;
   background-color: #f7f7f7; }
@@ -131,19 +143,21 @@ body {
   display: flex; }
   .feature__photo {
     width: 50%;
-    height: 90rem;
+    height: 60rem;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/feature-back.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/feature-back.jpg);
     background-size: cover;
     color: #fff;
     background-position: center;
-    position: relative; }
-  .feature__photo-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .feature-box {
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center; }
+    .feature-box__icon {
+      font-size: 8rem; }
   .feature__heading {
     font-size: 4rem;
     font-weight: 400;
@@ -151,6 +165,9 @@ body {
     margin-bottom: 3rem; }
   .feature__text {
     font-size: 1.6rem;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
     text-align: center; }
   .feature__img {
     width: 100%; }
@@ -159,6 +176,7 @@ body {
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding: 3rem;
     text-align: center; }
   .feature-box__icon {
