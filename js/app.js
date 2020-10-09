@@ -1,6 +1,5 @@
-
-var string = 'dkfakfa';
-
-var stringArr = string.split();
-
-console.log(typeof stringArr);
+var playButton = document.querySelector('.play--btn');
+var video = document.querySelector('.feature__video');
+playButton.addEventListener('click', function() {
+    video.autoplay(); 
+});
