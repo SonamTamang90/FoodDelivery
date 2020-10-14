@@ -392,8 +392,18 @@ body {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 3rem; }
-  .meal {
-    height: 33.5rem; } }
+  .category {
+    height: 33.5rem; }
+  .meal-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem; }
+  .meal:first-of-type {
+    margin-left: 4.5rem; }
+  .meal:not(:last-child) {
+    margin-right: 2rem; }
+  .meal__img-box {
+    margin-right: .5rem; } }
 
 .story__pictures {
   background-color: palevioletred;
