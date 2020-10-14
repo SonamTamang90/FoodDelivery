@@ -1,6 +1,9 @@
 .mr-sm {
   margin-right: .5rem; }
 
+.mb-xs {
+  margin-bottom: .5rem; }
+
 .mb-sm {
   margin-bottom: 1.5rem; }
 
@@ -229,9 +232,19 @@ body {
     z-index: 2; }
     .feature__video--icon {
       display: inline-block;
-      font-size: 8rem;
-      font-weight: 400;
-      color: rgba(255, 255, 255, 0.9); }
+      border: 2px solid #fff;
+      padding: 1.3rem;
+      height: 8rem;
+      width: 8rem;
+      border-radius: 50%;
+      font-size: 6.5rem;
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.9);
+      padding-left: 2rem;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
   .feature__heading {
     font-size: 4rem;
     font-weight: 400;
@@ -257,8 +270,8 @@ body {
     font-size: 2.8rem; }
 
 .footer {
-  background-color: #111320;
-  grid-column: full-start / full-end; }
+  background-color: #0a0b0e;
+  padding: 8rem 0; }
 
 .header {
   background-color: rgba(0, 0, 0, 0.7);
@@ -313,54 +326,49 @@ body {
   background-color: orangered;
   grid-column: center-start / center-end; }
 
-<<<<<<< HEAD
-=======
-.section-types {
+.section-meals {
   padding: 8rem 0; }
 
-.section__text {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 3rem; }
-
-.meals {
-  display: flex; }
+.meal-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem; }
 
 .meal {
-  height: 37.5rem;
-  width: 50rem;
-  position: relative;
-  overflow: hidden; }
-  .meal__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-size: cover;
-    z-index: 20;
-    transition: all .4s; }
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  margin-right: 6rem;
+  border: 1px solid #9c3341;
+  border-radius: .5rem;
+  transition: all .4s; }
+  .meal__img-box {
+    height: 14rem;
+    width: 20rem;
+    margin-right: 1.8rem;
+    overflow: hidden; }
   .meal__photo {
+    display: inline-block;
     width: 100%; }
-  .meal:hover .meal__overlay {
-    width: 100%;
-    height: 100%; }
+  .meal__content {
+    padding: 1.3rem; }
   .meal__title {
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none; }
-  .meal:hover .meal__title {
-    display: block; }
-  .meal__button {
+    font-size: 1.8rem;
+    font-weight: 600; }
+  .meal__intro {
+    font-size: 1.4rem; }
+  .meal__price {
+    font-size: 1.8rem;
+    font-weight: 600; }
+  .meal__rating i {
+    font-size: 1.2rem;
+    color: #9c3341; }
+  .meal__cta {
+    text-align: center;
     margin-top: 6rem; }
+  .meal:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
 
->>>>>>> da43f125c2f4f85885f01da4966e5515af424f83
 @media only screen and (max-width: 1440px) {
   .heading-primary {
     font-weight: 400;
@@ -394,3 +402,30 @@ body {
 .story__content {
   background-color: purple;
   grid-column: col-start 6 / full-end; }
+
+.section-subscription {
+  padding: 4rem;
+  background-color: #cc211f;
+  display: flex;
+  justify-content: center; }
+
+.subscription {
+  width: 20%;
+  color: #fff; }
+  .subscription__group {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1.5rem; }
+  .subscription__icon {
+    font-size: 2.8rem;
+    margin-right: 1.5rem; }
+  .subscription__label {
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .subscription__input {
+    width: 100%;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid #e6e5e5;
+    font-size: 1.5rem;
+    border-radius: .5rem; }
