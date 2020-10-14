@@ -405,13 +405,13 @@ body {
 
 .section-subscription {
   padding: 4rem;
-  background-color: #cc211f;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center; }
 
 .subscription {
   width: 20%;
-  color: #fff; }
+  color: #545454; }
   .subscription__group {
     display: flex;
     align-items: center;

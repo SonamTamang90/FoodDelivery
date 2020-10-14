@@ -1,13 +1,13 @@
 .section-subscription {
     padding: 4rem;    
-    background-color: #cc211f;
+    background-color: #f7f7f7;
     display: flex; 
     justify-content: center;
 }  
 
 .subscription {
     width: 20%;
-    color: $white-color;
+    color:#545454;
 
     &__group {
         display: flex;
@@ -27,7 +27,7 @@
         text-transform: uppercase;
     }
 
-    &__input {
+    &__input {   
         width: 100%;
         padding: 1.4rem 1.5rem;
         border: 1px solid #e6e5e5;
