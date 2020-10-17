@@ -37,18 +37,20 @@ body {
   line-height: 1.5; }
 
 .heading-primary {
-  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  font-family: 'Playfair Display', serif; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
-    letter-spacing: .5rem; }
+    font-size: 8rem;
+    letter-spacing: .5rem;
+    font-weight: 500; }
   .heading-primary--sub {
     display: block;
     font-size: 2.8rem;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-weight: 600; }
 
 .heading-secondary {
   font-size: 2.8rem;
@@ -133,7 +135,7 @@ body {
 
 .section-about {
   padding: 12rem 0;
-  background-color: #f7f7f7;
+  background-color: #F5F5F7;
   margin-top: -20vh; }
 
 .about__text {
@@ -144,7 +146,7 @@ body {
 
 .banner {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(237, 33, 58, 0.4), rgba(147, 41, 30, 0.4)), url("../img/hero.jpg");
+  background-image: url("../img/hero (1).jpg");
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   background-size: cover;
   background-position: center;
@@ -230,7 +232,7 @@ body {
     display: block;
     width: 100%;
     outline: 0;
-    box-shadow: 0 0.5rem 0.8rem rgba(255, 255, 255, 0.3);
+    border: none;
     z-index: 2; }
     .feature__video--icon {
       display: inline-block;
@@ -348,7 +350,7 @@ body {
     transform: scale(1); } }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #333333;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -386,8 +388,9 @@ body {
   margin-right: 1.5rem; }
 
 .customer-nav__icon {
-  font-size: 1.4rem;
-  color: #fff; }
+  height: 2rem;
+  width: 2rem;
+  fill: #fff; }
 
 .customer-nav__link:link, .customer-nav__link:visited {
   display: inline-block;
@@ -442,91 +445,6 @@ body {
     margin-top: 6rem; }
   .meal:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
-
-@media only screen and (max-width: 768px) {
-  .section-features {
-    padding: 8rem 0; }
-  .feature {
-    display: flex;
-    flex-direction: column; }
-    .feature__photo {
-      width: 100%;
-      height: 40rem;
-      overflow: hidden;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/feature-back.jpg);
-      background-size: cover;
-      color: #fff;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .feature__bg {
-      height: 600px;
-      width: 600px;
-      overflow: hidden;
-      object-fit: cover;
-      padding-top: 13rem;
-      position: relative; }
-    .feature__video {
-      width: 100%;
-      border: 3px solid #fff;
-      border-radius: .3rem;
-      z-index: 2; }
-      .feature__video--icon {
-        display: inline-block;
-        border: 2px solid #fff;
-        padding: 1.3rem;
-        height: 8rem;
-        width: 8rem;
-        border-radius: 50%;
-        font-size: 6.5rem;
-        font-weight: 100;
-        color: rgba(255, 255, 255, 0.9);
-        padding-left: 2rem;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        justify-content: center; }
-    .feature__heading {
-      font-size: 4rem;
-      font-weight: 400;
-      text-transform: uppercase;
-      margin-bottom: 3rem; }
-    .feature__text {
-      font-size: 1.6rem;
-      text-align: center;
-      width: 70%;
-      margin-left: 15%;
-      text-align: center; }
-    .feature__img {
-      width: 100%; }
-    .feature .category {
-      height: 33.5rem; }
-    .feature .meal-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 6rem; }
-    .feature .meal:first-of-type {
-      margin-left: 4.5rem; }
-    .feature .meal:not(:last-child) {
-      margin-right: 2rem; }
-    .feature .meal__img-box {
-      margin-right: .5rem; }
-    .feature__content {
-      width: 100%;
-      height: 40rem;
-      background-color: #f7f7f7;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 3rem;
-      text-align: center; }
-    .feature-box__icon {
-      font-size: 2.8rem; } }
-
-@media only screen and (max-width: 1200px) {
-  .category {
-    overflow: hidden; } }
 
 .story__pictures {
   background-color: palevioletred;

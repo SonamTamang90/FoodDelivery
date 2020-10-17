@@ -1,6 +1,6 @@
 .header {
-    background-color: rgba(0, 0, 0, .7);
-    display: flex;
+    background-color: #333333;
+    display: flex; 
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
@@ -61,8 +61,9 @@
     }
 
     &__icon {
-        font-size: 1.4rem;
-        color: $white-color; 
+        height: 2rem;
+        width: 2rem;
+        fill: $white-color; 
     }
 
     &__link:link,

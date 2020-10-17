@@ -1,143 +1,47 @@
 
-// Small devices (landscape phones, 576px and up)
-@media only screen and (max-width: 576px) {
 
+
+@media only screen and (max-width: 1600px) {
+
+    
+    
 }
 
-// Medium devices (tablets, 768px and up)
-@media only screen and (max-width: 768px) {
-    .section-features {
-        padding: 8rem 0;
-    }
+// @media only screen and (max-width: 1024px) { 
+//     .heading-primary { 
+//         text-transform: uppercase;
+//         color: #fff;  
+//         margin-bottom: 3rem;
+//         font-family: 'Playfair Display', serif;
     
-    .feature {
-        display: flex;
-        flex-direction: column;
         
-        &__photo {
-            width: 100%;
-            height: 40rem;    
-            overflow: hidden;  
-            background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../../img/feature-back.jpg);   
-            background-size: cover; 
-            color: $white-color;      
-            background-position: center;  
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }  
+//         &--main {  
+//             display: block; 
+//             font-size: 6rem;    
+//             letter-spacing: .5rem;  
+//             font-weight: 500;         
+//         }
     
-        &__bg {
-            height: 600px; 
-            width: 600px; 
-            overflow: hidden;
-            object-fit: cover; 
-            padding-top: 13rem;
-            position: relative; 
-        }
-    
-        &__video {
-            width: 100%;
-            border: 3px solid $white-color;
-            border-radius: .3rem;
-         
-            z-index: 2;
-    
-            &--icon {
-                display: inline-block;
-                border: 2px solid #fff;
-                padding: 1.3rem;
-                height: 8rem;    
-                width: 8rem;
-                border-radius: 50%;
-                font-size: 6.5rem;
-                font-weight: 100;        
-                color: rgba($white-color, 0.9); 
-                padding-left: 2rem;  
-    
-                display: flex;
-                align-items: center;
-                justify-items: center;
-                justify-content: center;
-            }          
-        }
-    
-        &__heading {
-            font-size: 4rem;
-            font-weight: 400;
-            text-transform: uppercase;    
-            margin-bottom: 3rem;   
-        }
-    
-        &__text {
-            font-size: 1.6rem;
-            text-align: center;
-            width: 70%; 
-            margin-left: 15%;   
-            text-align: center;
-        }
-    
-        &__img {
-            width: 100%; 
-        }
+//         &--sub {
+//             display: block;     
+//             font-size: 2.4rem;  
+//             letter-spacing: 3px;
+//             font-weight: 600;
+//         }
+//     } 
 
-    .category {
-        height: 33.5rem;         
-    }   
+// }
 
-    //Meals Section
-    .meal-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 6rem;
-     }
-    
-     .meal {
-        
-        &:first-of-type {
-            margin-left: 4.5rem;
-        } 
-               
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
-       
-        &__img-box {
-            margin-right: .5rem;      
-        } 
-     } 
-       &__text {
-    
-        }
-    
-        &__content {
-            width: 100%;
-            height: 40rem;  
-            background-color: #f7f7f7;
-            display: flex;
-            justify-content: center; 
-            flex-direction: column; 
-            padding: 3rem;
-            text-align: center;
-        }
-    
-        &-box {
-            &__icon {
-                font-size: 2.8rem;
-            }
-        }     
-    }
-}
+
 
 
 // Large devices (desktops, 992px and up)
-@media only screen and (max-width: 922px) {
+// @media only screen and (max-width: 922px) { 
 
-}
+// }
 
 // Extra large devices (large desktops, 1200px and up)
-@media only screen and (max-width: 1200px) {
-  .category {
-      overflow: hidden;
-  }
-}
+// @media only screen and (max-width: 1200px) {
+    
+    
+// }
