@@ -1,7 +1,7 @@
 .banner {
     height: 95vh;
-    background-image:  url("../img/hero (1).jpg"); 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    background-image:linear-gradient(rgba($black-color, 0.3), rgba($black-color, 0.3)),  url("../img/plate.jpg"); 
+  //  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -10,7 +10,7 @@
     &__text-box {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 50%; 
         transform: translate(-50%, -50%);
         text-align: center;  
     }

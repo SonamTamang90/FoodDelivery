@@ -38,7 +38,7 @@ body {
 
 .heading-primary {
   text-transform: uppercase;
-  color: #fff;
+  color: #f5ecec;
   margin-bottom: 3rem;
   font-family: 'Playfair Display', serif; }
   .heading-primary--main {
@@ -146,8 +146,7 @@ body {
 
 .banner {
   height: 95vh;
-  background-image: url("../img/hero (1).jpg");
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/plate.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
