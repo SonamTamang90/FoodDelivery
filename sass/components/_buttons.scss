@@ -9,16 +9,17 @@
     &--primary {
         font-size: 1.5rem;
         text-transform: uppercase;
-        color: $white-color;   
-        background-color: #ff0022;
-        padding: 1.3rem 3rem; 
-        transition: border-radius .3s;
+        color: $white-color;  
+        background-image: linear-gradient(to right bottom,$primary-color, $secondary-color); 
+        //background-color: $primary-color;
+        padding: 1.3rem 4rem;  
+        border-radius: 10rem;
+        transition: border-radius .3s;       
         text-align: center;   
 
 
         &:hover {
-            border-radius: 100px;
-            background-color: #df273f;
+          border-radius: 0; 
         }
     }
 
@@ -26,15 +27,14 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         color: $white-color;   
-        background-color: #ff0022;
-        padding: 1.5rem 5rem; 
+        background-image: linear-gradient(to right bottom,$primary-color, $secondary-color); 
+        padding: 1.5rem 6rem; 
         transition: border-radius .3s;
         text-align: center;   
 
 
         &:hover {
-            border-radius: 100px;
-            background-color: #df273f;
+            border-radius: 10rem;
         }
     }
 
@@ -42,31 +42,14 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         color: $white-color;   
-        background-color: #ff0022;
-        padding: 1.5rem 5rem;       
+        background-image: linear-gradient(to right bottom,$primary-color, $secondary-color); 
+        padding: 1.5rem 5rem;        
         transition: border-radius .3s;
         text-align: center;
         align-self: center;
 
         &:hover {
-            border-radius: 100px;  
-            background-color: #df273f;
+            border-radius: 10rem;  
         }
-    }
-}
-
-.play--btn {
-    display: block;
-    z-index: 1000;  
-    background-color: #df273f;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: none;
-    border:none;
-
-    &:focus {
-        outline: none;
     }
 }

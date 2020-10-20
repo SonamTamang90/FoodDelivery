@@ -11,43 +11,46 @@
  .category-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+   
  }
 
  .category { 
-     height: 37.5rem;   
-     width: 50rem;  
-     position: relative;
+     height: 25rem;    
+     width: 28rem;  
+     position: relative;   
+     overflow: hidden; 
 
     &__overlay {
         position: absolute;
         top: 0;
-        left: 0;    
-        background-color: rgba(0,0,0,.6);       
-        background-size: cover;
+        left: 0;  
+        background-image: linear-gradient(to right bottom, rgba($primary-color, .8),rgba($secondary-color, .8));      
         z-index: 20;
-        transition: all .4s; 
+        transition: all .6s;  
     }
 
     &__photo {
-        width: 100%;
-    }
-
-    &:hover &__overlay {
-        width: 100%;
+        display: block;
         height: 100%;
     }
 
+    &:hover &__overlay {
+        height: 100%;
+        width: 100%;
+    }
+
     &__title {
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: 600;
         text-transform: uppercase; 
         color: $white-color; 
-        margin-bottom: 1.5rem;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: none;
+        animation: moveFromUp .8s;
     }
 
     &:hover &__title {
@@ -58,4 +61,17 @@
         margin-top: 6rem;
     }
     
+ }
+
+ @keyframes moveFromUp {
+    0% {
+        opacity: 0;
+    }
+
+    80% { 
+
+    }
+
+    100% {
+    }
  }
