@@ -12,19 +12,9 @@
 .about {
 
     &__img-box {
-
-        &-1 {
-            position: absolute;
-            top: 15%; 
-            right: 8%; 
-        }
-
-        &-2 {
-            position: absolute;
-            top: 15%;         
-            left: 12%;  
-        }
-      
+        position: absolute;
+        top: 15%; 
+        right: 8%;       
     }  
 
     &__img {
