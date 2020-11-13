@@ -1,4 +1,5 @@
 .story {
+    grid-column: full-start / full-end;
     &__pictures {
         background-color: palevioletred;
         grid-column: full-start / col-end 5;

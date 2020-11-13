@@ -1,14 +1,42 @@
 .section-about {
-    padding: 12rem 0;
+    padding: 8rem 0;
     background-color: #F5F5F7;   
-    margin-top: -20vh; 
+    margin-top: -12vh; 
     grid-column: center-start / center-end;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .3);
+    z-index: 999;
+    position: relative;
 }          
 
 
-.about__text {
-    font-size: 1.5rem;
-    width: 50%;
-    margin-left: 25%;
-    text-align: center; 
-}  
+.about {
+
+    &__img-box {
+
+        &-1 {
+            position: absolute;
+            top: 15%; 
+            right: 8%; 
+        }
+
+        &-2 {
+            position: absolute;
+            top: 15%;         
+            left: 12%;  
+        }
+      
+    }  
+
+    &__img {
+        height: 18rem; 
+    } 
+
+
+    &__text {
+        font-size: 1.5rem; 
+        width: 50%;
+        margin-left: 25%;
+        text-align: center; 
+    }
+}
+ 

@@ -1,4 +1,15 @@
 .banner {
-    background-image: url("../img/hero-1.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/hero-1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
     grid-column: full-start / full-end;
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }

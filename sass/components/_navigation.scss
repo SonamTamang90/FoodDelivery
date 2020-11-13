@@ -1,0 +1,27 @@
+.navigation {
+
+    &__list {
+        display: flex;   
+        
+        list-style: none;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration:  none;
+            font-size: 1.6rem;
+            color: #333;
+            text-transform: uppercase;
+        }
+    }
+}

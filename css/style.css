@@ -44,14 +44,13 @@ body {
 .heading-primary {
   text-transform: uppercase;
   color: #f5ecec;
-  margin-bottom: 6rem;
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 3rem; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
     letter-spacing: .5rem;
     font-weight: 500;
-    background-image: linear-gradient(to right bottom, rgba(224, 39, 40, 0.7), rgba(126, 24, 66, 0.7));
     padding: 1rem;
     border-radius: .5rem;
     margin-bottom: 1.5rem; }
@@ -132,11 +131,58 @@ body {
   .btn--feature:hover {
     border-radius: 10rem; }
 
+.navigation__list {
+  display: flex;
+  list-style: none; }
+
+.navigation__item:not(:last-child) {
+  margin-right: 2.4rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #333;
+  text-transform: uppercase; }
+
+.user-nav {
+  margin-right: 3rem; }
+  .user-nav__list {
+    list-style: none;
+    display: flex; }
+  .user-nav__item:not(:last-child) {
+    margin-right: 2.4rem; }
+  .user-nav__icon {
+    width: 2.5rem;
+    height: 2.5rem; }
+  .user-nav__photo {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #333; }
+
 .section-about {
-  padding: 12rem 0;
+  padding: 8rem 0;
   background-color: #F5F5F7;
-  margin-top: -20vh;
-  grid-column: center-start / center-end; }
+  margin-top: -12vh;
+  grid-column: center-start / center-end;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  position: relative; }
+
+.about__img-box-1 {
+  position: absolute;
+  top: 15%;
+  right: 8%; }
+
+.about__img-box-2 {
+  position: absolute;
+  top: 15%;
+  left: 12%; }
+
+.about__img {
+  height: 18rem; }
 
 .about__text {
   font-size: 1.5rem;
@@ -145,8 +191,17 @@ body {
   text-align: center; }
 
 .banner {
-  background-image: url("../img/hero-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
   grid-column: full-start / full-end; }
+  .banner__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .section-categories {
   padding: 8rem 0;
@@ -203,7 +258,8 @@ body {
   100% { } }
 
 .section-features {
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  grid-column: full-start / full-end; }
 
 .feature {
   display: flex; }
@@ -271,6 +327,7 @@ body {
     font-size: 2.8rem; }
 
 .footer {
+  grid-column: full-start / full-end;
   background-color: #0a0b0e;
   padding: 8rem 0; }
   .footer__content {
@@ -349,14 +406,22 @@ body {
 
 .header {
   grid-column: full-start / full-end;
-  background-color: royalblue; }
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header__logo-box {
+    margin-left: 3rem; }
+  .header__logo {
+    height: 6rem; }
 
 .how-it-works {
   background-color: orangered;
   grid-column: center-start / center-end; }
 
 .section-meals {
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  grid-column: center-start / center-end; }
 
 .meal-container {
   display: flex;
@@ -497,19 +562,21 @@ body {
     .category__button {
       margin-top: 6rem; } }
 
-.story__pictures {
-  background-color: palevioletred;
-  grid-column: full-start / col-end 5; }
-
-.story__content {
-  background-color: purple;
-  grid-column: col-start 6 / full-end; }
+.story {
+  grid-column: full-start / full-end; }
+  .story__pictures {
+    background-color: palevioletred;
+    grid-column: full-start / col-end 5; }
+  .story__content {
+    background-color: purple;
+    grid-column: col-start 6 / full-end; }
 
 .section-subscription {
   padding: 4rem;
   background-color: #f7f7f7;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  grid-column: full-start / full-end; }
 
 .subscription {
   width: 20%;

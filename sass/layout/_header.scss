@@ -1,4 +1,16 @@
 .header {
     grid-column: full-start / full-end;
-    background-color: royalblue;      
+    background-color: #f7f7f7;   
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+
+    &__logo-box {
+        margin-left: 3rem;
+    }
+
+    &__logo {
+        height: 6rem;
+    }
 }

@@ -1,8 +1,8 @@
 .heading-primary {
     text-transform: uppercase;
-    color: #f5ecec;  
-    margin-bottom: 6rem;
+    color: #f5ecec;   
     font-family: 'Playfair Display', serif;  
+    margin-bottom: 3rem;
 
     
     &--main {  
@@ -10,7 +10,7 @@
         font-size: 6rem;    
         letter-spacing: .5rem;  
         font-weight: 500; 
-        background-image: linear-gradient(to right bottom, rgba($primary-color, .7),rgba(126, 24, 66, .7));
+      //  background-image: linear-gradient(to right bottom, rgba($primary-color, .7),rgba(126, 24, 66, .7));
         padding: 1rem;
         border-radius: .5rem;  
         margin-bottom: 1.5rem;      

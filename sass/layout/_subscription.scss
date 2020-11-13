@@ -3,6 +3,8 @@
     background-color: #f7f7f7;
     display: flex; 
     justify-content: center;
+
+    grid-column: full-start / full-end;
 }  
 
 .subscription {
