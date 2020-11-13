@@ -1,17 +1,4 @@
 .banner {
-    height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/hero-1.jpg"); 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
-    background-size: cover;
-    background-position: center;
-    position: relative;   
-    z-index: 5;
-
-    &__text-box {     
-        position: absolute;
-        top: 50%;
-        left: 50%; 
-        transform: translate(-50%, -50%);
-        text-align: center;  
-    }
+    background-image: url("../img/hero-1.jpg");
+    grid-column: full-start / full-end;
 }
