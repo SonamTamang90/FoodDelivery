@@ -145,6 +145,29 @@ body {
   color: #333;
   text-transform: uppercase; }
 
+.reasons {
+  display: flex;
+  justify-content: center; }
+
+.reason {
+  width: 25rem;
+  margin-right: 2.5rem;
+  margin-top: 12rem; }
+  .reason__top {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 1.5rem; }
+  .reason__icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+    margin-top: -2.4rem; }
+  .reason__title {
+    font-size: 1.7rem; }
+  .reason__text {
+    font-size: 1.4rem; }
+
 .user-nav {
   margin-right: 3rem; }
   .user-nav__list {
@@ -177,7 +200,7 @@ body {
   right: 8%; }
 
 .about__img {
-  height: 18rem; }
+  height: 14rem; }
 
 .about__text {
   font-size: 1.5rem;
