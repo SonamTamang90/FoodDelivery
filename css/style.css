@@ -156,13 +156,14 @@ body {
   .reason__top {
     display: flex;
     align-items: center;
-    justify-items: center;
     margin-bottom: 1.5rem; }
   .reason__icon {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1.5rem;
-    margin-top: -2.4rem; }
+    display: inline-block;
+    font-size: 3.5rem;
+    margin-right: .8rem;
+    background-image: linear-gradient(to right bottom, #e02728, #7E1842);
+    -webkit-background-clip: text;
+    color: transparent; }
   .reason__title {
     font-size: 1.7rem; }
   .reason__text {

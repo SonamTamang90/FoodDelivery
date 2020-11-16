@@ -11,15 +11,16 @@
     &__top {
         display: flex;
         align-items: center;
-        justify-items: center;
         margin-bottom: 1.5rem;
     }
 
     &__icon {
-        width: 4rem;
-        height: 4rem;
-        margin-right: 1.5rem;
-        margin-top: -2.4rem;
+        display: inline-block;
+        font-size: 3.5rem;  
+        margin-right: .8rem;
+        background-image: linear-gradient(to right bottom,$primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     &__title { 
@@ -29,4 +30,4 @@
     &__text {
         font-size: 1.4rem;
     }
-}
+}     
